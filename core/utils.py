@@ -41,4 +41,4 @@ def get_tone_intent_and_suggestions(query):
         return tone, intent, formatted_actions[:3]
     except Exception as e:
         print("Error with LLM:", e)
-        return "Unknown", "Unknown", []
+        return MY_KEY, "Unknown", []
