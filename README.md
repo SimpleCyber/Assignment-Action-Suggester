@@ -15,3 +15,10 @@
     python manage.py startapp core
 
     1.3 : setup settings.py
+
+
+## PHASE 2: PostgreSQL Database & .env
+
+   2.1 : Create .gitignore and .env
+   
+   2.2 : Read .env using python-dotenv pip install python-dotenv
