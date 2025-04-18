@@ -17,8 +17,26 @@
     1.3 : setup settings.py
 
 
-## PHASE 2: PostgreSQL Database & .env
+## PHASE 2: .gitignore & .env
 
    2.1 : Create .gitignore and .env
-   
+
    2.2 : Read .env using python-dotenv pip install python-dotenv
+
+
+
+## PHASE 3: Creating Model and setup database (postgresql)
+
+   3.1 : database name : Learn02
+
+   3.2 : Create models.py
+            query
+            tone
+            intent
+            suggestion actions
+
+
+
+
+
+
