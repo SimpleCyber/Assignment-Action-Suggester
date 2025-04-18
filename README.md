@@ -117,6 +117,15 @@
    8.4 : update the url.py in core
    
 
+
+## PHASE 9: Deployment on render
+
+   python manage.py makemigrations
+   python manage.py migrate
+
+
+   9.1 : Create requirements.txt
+
    
 
 
