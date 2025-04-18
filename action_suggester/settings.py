@@ -48,6 +48,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://assignment-action-suggester.onrender.com"
+]
+
 ROOT_URLCONF = 'action_suggester.urls'
 
 TEMPLATES = [
