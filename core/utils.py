@@ -6,6 +6,9 @@ load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+
+
+
 def get_tone_intent_and_suggestions(query):
     prompt = f"""
     Analyze the following input and respond in this format:
@@ -20,6 +23,7 @@ def get_tone_intent_and_suggestions(query):
     """
 
     try:
+        print("OpenAI API Key loaded:", openai.api_key)
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}]
