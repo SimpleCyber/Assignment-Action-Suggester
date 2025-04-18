@@ -43,6 +43,25 @@
    4.1 : Create Serializers 
 
 
+## PHASE 5: LLM api creation {OPEN AI api}
+
+   5.1 : prompt
+      Analyze the following input and respond in this format:
+      Tone: <tone>
+      Intent: <intent>
+      Suggested actions:
+      1. <step 1>
+      2. <step 2>
+      3. <step 3>
+   
+   5.2 : choose model of openai
+
+   5.3 : parse the data
+
+   5.4 : extract the data from the response
+
+   5.5 : return tone, intent and suggestions
+
 
 
 
