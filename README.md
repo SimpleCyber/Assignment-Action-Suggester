@@ -88,6 +88,26 @@
          ]
       }
    ```
+
+
+## PHASE 7: Creating end point { api/analyze/ }
+
+   7.1 : create urls.py in core and update urls.py in action_suggester
+
+   7.2 : Tesing through the postman
+
+         1. start server : python manage.py runserver
+         2. open postman
+         3. Select post
+         4. enter url : http://127.0.0.1:8000/api/analyze/
+         5. Body -> raw -> Json
+         6. Enter query : 
+            {
+               "query": "Amazon forset is lungs of the world"
+            }
+         7. click send
+   
+
    
 
 
