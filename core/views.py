@@ -25,3 +25,13 @@ def analyze_query(request):
             "suggested_actions": suggestions
         })
     return Response(serializer.errors, status=400)
+
+
+def home(request):
+    if request.method == "POST":
+        query = request.POST.get("query")
+        tone, intent, suggestions = get_tone_intent_and_suggestions(query)
+        QueryLog.objects.create(query=query, tone=tone, intent=intent, suggested_actions=suggestions)
+
+    logs = QueryLog.objects.all().order_by('-timestamp')
+    return render(request, 'core/home.html', {'logs': logs})

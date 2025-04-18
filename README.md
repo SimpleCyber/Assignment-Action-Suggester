@@ -108,6 +108,15 @@
          7. click send
    
 
+
+## PHASE 8: Creating the UI for the user intercation
+
+   8.1 : base.html outline
+   8.2 : home.html take user input and show history
+   8.3 : update the views create function to render home
+   8.4 : update the url.py in core
+   
+
    
 
 

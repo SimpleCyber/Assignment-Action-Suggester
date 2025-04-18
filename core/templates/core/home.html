@@ -1,0 +1,35 @@
+{% extends "core/base.html" %}
+{% block content %}
+    <h2>Submit Query</h2>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="query" placeholder="Enter your message" required>
+        <button type="submit">Analyze</button>
+    </form>
+    <br>
+    <h2>Query History</h2>
+    <table border="1">
+        <tr>
+            <th>Timestamp</th>
+            <th>Query</th>
+            <th>Tone</th>
+            <th>Intent</th>
+            <th>Suggested Actions</th>
+        </tr>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log.timestamp }}</td>
+            <td>{{ log.query }}</td>
+            <td>{{ log.tone }}</td>
+            <td>{{ log.intent }}</td>
+            <td>
+                <ul>
+                    {% for action in log.suggested_actions %}
+                    <li>{{ action.display_text }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
