@@ -1,6 +1,17 @@
-PHASE 0: Setup the Github Repo
-Project Name : Action Suggester
+## PHASE 0: Setup the Github Repo
+   Project Name : Action Suggester
+   git clone https://github.com/SimpleCyber/Assignment-Action-Suggester.git
 
-git clone https://github.com/SimpleCyber/Assignment-Action-Suggester.git
 
-PHASE 1: Project Initialization & Setup
+
+## PHASE 1: Project Initialization & Setup
+
+    1.1 : Install all requirements
+    pip install django djangorestframework python-dotenv psycopg2-binary openai
+
+    1.2 : Create Django Project and App
+    django-admin startproject actionsuggester 
+    cd actionsuggester
+    python manage.py startapp core
+
+    1.3 : setup settings.py
