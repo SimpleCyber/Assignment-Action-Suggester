@@ -63,6 +63,34 @@
    5.5 : return tone, intent and suggestions
 
 
+## PHASE 6: Views [ Interaction between OpenAI, Database]
+
+   6.1 : accept query
+   ``` JSON
+      { "query": "Mobile is like an addiction" }
+   ```
+
+   6.2 : Validates it using Serializer
+
+   6.3 : save the response to the database
+
+   6.4 : return the structured JSON response
+   ``` JSON
+      {
+         "query": "User's message",
+         "analysis": {
+         "tone": "Identified Tone",
+         "intent": "Identified Intent"
+         },
+         "suggested_actions": [
+         {"action_code": "ACTION_1", "display_text": "Suggestion 1"},
+         // ... more suggestions (up to 3)
+         ]
+      }
+   ```
+   
+
+
 
 
 
