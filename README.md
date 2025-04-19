@@ -100,6 +100,11 @@
          2. open postman
          3. Select post
          4. enter url : http://127.0.0.1:8000/api/analyze/
+
+or
+
+https://assignment-action-suggester.onrender.com/api/analyze/
+
          5. Body -> raw -> Json
          6. Enter query : 
             {
